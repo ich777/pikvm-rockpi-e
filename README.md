@@ -105,7 +105,7 @@ wget -O /etc/systemd/system/kvmd-janus-static.service https://github.com/ich777/
 wget -O /etc/systemd/system/kvmd-webterm.service https://github.com/ich777/pikvm-rockpi-s/raw/master/systemd/kvmd-webterm.service
 wget -O /etc/systemd/system/kvmd-ipmi.service https://github.com/ich777/pikvm-rockpi-s/raw/master/systemd/kvmd-ipmi.service
 wget -O /etc/systemd/system/kvmd-vnc.service https://github.com/ich777/pikvm-rockpi-s/raw/master/systemd/kvmd-vnc.service
-wget -O /etc/systemd/system/kvmd-nginx.service https://github.com/ich777/pikvm-rockpi-s/blob/master/systemd/kvmd-nginx.service
+wget -O /etc/systemd/system/kvmd-nginx.service https://github.com/ich777/pikvm-rockpi-s/raw/master/systemd/kvmd-nginx.service
 wget -O /usr/lib/tmpfiles.d/kvmd.conf https://github.com/ich777/pikvm-rockpi-s/raw/master/tmpfiles.d/kvmd.conf
 wget -O /usr/lib/python3.11/kvmd/plugins/hid/_mcu/gpio.py https://github.com/ich777/pikvm-rockpi-e/raw/master/mraa/hid/_mcu/gpio.py
 wget -O /usr/lib/python3.11/kvmd/aiogp.py https://github.com/ich777/pikvm-rockpi-s/raw/master/mraa/aiogp.py
