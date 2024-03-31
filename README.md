@@ -200,7 +200,11 @@ systemctl enable kvmd-webterm
 # Enable systemd services
 #systemctl enable kvmd-otg
 systemctl enable kvmd
-systemctl enable kvmd-janus
+
+# Enable either kvmd-janus or kvmd-janus-static:
+# kvmd-janus-static is for a local installation only which
+# is the prrefered methode for this installation method
+#systemctl enable kvmd-janus
 systemctl enable kvmd-janus-static
 
 # Reboot
