@@ -9,12 +9,12 @@ Please Note that only KVM functionality is implemented.
   
   
 ### First Steps:
-1) Download Armbian for your RockPi E and put on the SD - [Download Mirror](https://github.com/ich777/pikvm-rockpi-e/releases/download/23.11.1_6.1.63/Armbian_23.11.1_Rockpi-e_bookworm_current_6.1.63_minimal.img.xz)  
-2) Boot into armbian and login with ssh, username: `root` passwd: `1234`  
+1) Flash your Raspberry Pico download [this](https://github.com/ich777/pikvm-rockpi-s/raw/master/pi-pico-fw/pico-hid.uf2) file, press and hold the button on the Pico while connecting to your PC and place the file in the Picos Disk that will appear, safely eject the Pico and disconnect it from your PC)  
+Please also see the file [wiring_diagram.png](https://github.com/ich777/pikvm-rockpi-e/blob/master/rockpi_e_wiring_diagram.png) on how to set up the connection to the Rasperry Pi Pico (and ATX connector)  
+2) Download Armbian for your RockPi E and put on the SD - [Download Mirror](https://github.com/ich777/pikvm-rockpi-e/releases/download/23.11.1_6.1.63/Armbian_23.11.1_Rockpi-e_bookworm_current_6.1.63_minimal.img.xz)  
+3) Boot into armbian and login with ssh, username: `root` passwd: `1234`  
 Please note that you first can only boot with the 100Mbit/s NIC, after the reboot the 1Gbit/s NIC will be working.  
-3) Change the password for root and right after that press `CTRL + C` to drop to the shell  
-4) Please also see the file [wiring_diagram.png](https://github.com/ich777/pikvm-rockpi-e/blob/master/rockpi_e_wiring_diagram.png) on how to set up the connection to the Rasperry Pi Pico (and ATX connector)  
-(To flash your Pico download [this](https://github.com/ich777/pikvm-rockpi-s/raw/master/pi-pico-fw/pico-hid.uf2) file, press and hold the button on the Pico while connecting to your PC and place the file in the Picos Disk that will appear, safely eject the Pico and disconnect it from your PC)  
+4) Change the password for root and right after that press `CTRL + C` to drop to the shell  
 5) Follow the script below  
 6) Connect through the browser to the IP from your RockPi and login with Username: `admin` Password: `admin`
   
