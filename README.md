@@ -33,6 +33,9 @@ Please note that you first can only boot with the 100Mbit/s NIC, after the reboo
 # Disable heartbeat LED on the RockPi E to not get blind during installation
 echo 0 > /sys/devices/platform/leds/leds/blue\:/brightness
 
+# Disable armbian repository
+sed -i 's/^/#/' /etc/apt/sources.list.d/armbian.list
+
 # Update packages
 apt-get update
 
@@ -206,10 +209,6 @@ systemctl enable kvmd
 # is the prrefered methode for this installation method
 #systemctl enable kvmd-janus
 systemctl enable kvmd-janus-static
-
-# Disable armbian repository
-sed -i 's/^/#/' /etc/apt/sources.list.d/armbian.list
-rm -rf /var/lib/apt/lists/*
 
 # Reboot
 reboot
