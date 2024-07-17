@@ -207,9 +207,9 @@ systemctl enable kvmd
 #systemctl enable kvmd-janus
 systemctl enable kvmd-janus-static
 
-# Disable armbian source
+# Disable armbian repository
 sed -i 's/^/#/' /etc/apt/sources.list.d/armbian.list
-apt update
+rm -rf /var/lib/apt/lists/*
 
 # Reboot
 reboot
